@@ -159,58 +159,10 @@ A few examples:
 └──
 ```
 
-## state management
-
-To be completed
-
-## internal state
-
-To be completed
-
-## api state
-
-### status codes
-
-| Status Code | Description             |
-| ----------- | ----------------------- |
-| 200         | `ok`                    |
-| 201         | `created`               |
-| 400         | `BAD REQUEST`           |
-| 404         | `NOT FOUND`             |
-| 500         | `INTERNAL SERVER ERROR` |
-
-## environents
-
-To be completed
-
 ## unit testing
-
-## e2e testing
-
-### how to test
-
-Testing the app is done using Detox.
-
-1. Make sure Detox cli is installed on your device.
-   npm i -g detox
-
-2. You'll need applesimutils installed on your machine to run iOS tests.
-
-3. Make sure you have ANDROID_HOME and JAVA_HOME set in your PATH env variable.
-
-4. The .e2e.env contains the following env variables, with example values provided:
-
-ANDROID_AVD_NAME="Pixel_3_API_R"
-IPHONE_MODEL="iPhone 11"
-
-5. Run the test command
-
-Detox will need to run build a specific version of your app in order to run tests on it.
-/!\ You cannot run e2e tests on the app without first having built a specific version (so it will not work if you just launched the app with yarn ios or yarn android)
-
-There are multiple test commands that are available, and that depends on which environment you decide to run tests on.
-Please refer to the following commands in package.json. To build test versions of the app, you can run any of these build commands:
-
+```shell
+  yarn test
+```
 ## deployment
 
 ### ios
